@@ -13,8 +13,4 @@ resource "tencentcloud_instance" "this" {
   internet_max_bandwidth_out = 5
   internet_charge_type       = "TRAFFIC_POSTPAID_BY_HOUR"
   user_data                  = base64encode(file("startup.sh"))
-
-  tags = {
-    role = "http-server"
-  }
 }
