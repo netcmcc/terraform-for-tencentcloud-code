@@ -10,18 +10,18 @@ resource "tencentcloud_instance" "this" {
   image_id          = data.tencentcloud_images.this.images.0.image_id
 
   data_disks {
-    data_disk_type = "CLOUD_PREMIUM"
-    data_disk_size = 50
+    data_disk_type = var.disks["small-disk"].type
+    data_disk_size = var.disks["small-disk"].size
   }
 
   data_disks {
-    data_disk_type = "CLOUD_SSD"
-    data_disk_size = 70
+    data_disk_type = var.disks["medium-disk"].type
+    data_disk_size = var.disks["medium-disk"].size
   }
 
   data_disks {
-    data_disk_type = "CLOUD_SSD"
-    data_disk_size = 100
+    data_disk_type = var.disks["large-disk"].type
+    data_disk_size = var.disks["large-disk"].size
   }
 
   # dynamic "data_disks" {
