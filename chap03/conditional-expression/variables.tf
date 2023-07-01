@@ -1,0 +1,27 @@
+variable "region" {
+  type        = string
+  description = "Default Region"
+  default     = "ap-guangzhou"
+}
+
+variable "zone" {
+  type        = string
+  description = "Default Zone"
+  default     = "ap-guangzhou-3"
+}
+
+variable "server_name" {
+  type        = string
+  description = "Name of server"
+}
+
+variable "instance_type" {
+  type        = string
+  description = "Instance Type"
+  default     = "S5.SMALL2"
+}
+
+variable "public_ip" {
+  type    = bool
+  default = false
+}
