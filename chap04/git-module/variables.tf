@@ -1,13 +1,13 @@
 variable "region" {
   type        = string
   description = "Default Region"
-  default     = "us-central1"
+  default     = "ap-guangzhou"
 }
 
 variable "zone" {
   type        = string
   description = "Default Zone"
-  default     = "us-central1-a"
+  default     = "ap-guangzhou-3"
 }
 
 variable "server_name" {

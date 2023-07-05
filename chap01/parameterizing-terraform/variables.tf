@@ -18,5 +18,5 @@ variable "server_name" {
 variable "instance_type" {
   type        = string
   description = "Instance Type"
-  default     = "SA1.SMALL1"
+  default     = "S5.MEDIUM2"
 }

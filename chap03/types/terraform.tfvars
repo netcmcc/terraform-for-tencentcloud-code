@@ -7,7 +7,7 @@ map  = { ap-guangzhou = "Guangzhou", ap-shanghai = "Shanghai" }
 
 nested_map = {
   region        = ["ap-guangzhou", "ap-shanghai"],
-  instance_type = ["SA1.SMALL1", "SA1.MEDIUM4"]
+  instance_type = ["S5.MEDIUM2", "SA1.MEDIUM4"]
 }
 
 object = {

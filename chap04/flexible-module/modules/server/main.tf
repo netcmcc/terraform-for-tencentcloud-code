@@ -1,6 +1,6 @@
 locals {
   machine_type_mapping = {
-    small  = "S5.SMALL2"
+    small  = "S5.MEDIUM2"
     medium = "S5.MEDIUM4"
     large  = "S5.LARGE8"
   }
