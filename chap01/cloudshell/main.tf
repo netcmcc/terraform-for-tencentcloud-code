@@ -2,7 +2,7 @@ terraform {
   required_providers {
     tencentcloud = {
       source  = "tencentcloudstack/tencentcloud"
-      version = ">= 1.81.8"
+      version = ">= 1.81.73"
     }
   }
 }
@@ -19,7 +19,7 @@ data "tencentcloud_images" "this" {
 resource "tencentcloud_instance" "this" {
   instance_name     = "cloudshell"
   instance_type     = "S5.MEDIUM2"
-  availability_zone = "ap-guangzhou-3"
+  availability_zone = "ap-guangzhou-6"
   image_id          = data.tencentcloud_images.this.images.0.image_id
   tags = {
     environment = "dev"
