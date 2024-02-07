@@ -1,2 +1,2 @@
-zone   = "ap-guangzhou-3"
+zone   = "ap-guangzhou-6"
 region = "ap-guangzhou"

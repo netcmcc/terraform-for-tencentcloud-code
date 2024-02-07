@@ -1,3 +1,3 @@
-zone = "ap-guangzhou-3"
+zone = "ap-guangzhou-6"
 
 server_name = "server-git-module"

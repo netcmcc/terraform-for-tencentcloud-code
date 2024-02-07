@@ -20,7 +20,7 @@ module "server2" {
 module "server3" {
   source       = "./modules/server"
   name         = "${var.server_name}-3"
-  zone         = data.tencentcloud_availability_zones_by_product.this.zones[2].name
+  zone         = data.tencentcloud_availability_zones_by_product.this.zones[1].name
   machine_size = "large"
   public_ip    = true
   environment  = var.environment

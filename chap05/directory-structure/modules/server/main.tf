@@ -2,7 +2,7 @@ locals {
   machine_type_mapping = {
     small  = "S5.MEDIUM2"
     medium = "S5.MEDIUM4"
-    large  = "S5.LARGE8"
+    large  = "S6.LARGE8"
   }
   instance_type = local.machine_type_mapping[var.machine_size]
 }

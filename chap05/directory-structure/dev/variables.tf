@@ -7,7 +7,7 @@ variable "region" {
 variable "zone" {
   type        = string
   description = "Default Zone"
-  default     = "ap-guangzhou-3"
+  default     = "ap-guangzhou-6"
 }
 
 variable "server_name" {

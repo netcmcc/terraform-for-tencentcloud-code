@@ -4,7 +4,7 @@ variable "name" {
 
 variable "zone" {
   type    = string
-  default = "ap-guangzhou-3"
+  default = "ap-guangzhou-6"
 }
 
 variable "public_ip" {

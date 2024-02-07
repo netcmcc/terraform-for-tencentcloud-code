@@ -1,4 +1,4 @@
-zone = "ap-guangzhou-3"
+zone = "ap-guangzhou-6"
 
 server_name = "server-directory-structure"
 environment = "dev"

@@ -13,7 +13,7 @@ module "server2" {
 module "server3" {
   source       = "./modules/server"
   name         = "${var.server_name}-3"
-  zone         = "ap-guangzhou-4"
+  zone         = "ap-guangzhou-7"
   machine_size = "large"
   public_ip    = false
 }
