@@ -4,8 +4,8 @@ vpc_name = "my-network"
 vpc_cidr = "192.168.0.0/16"
 
 subnets = {
-  guangzhou-three = { "zone" : "ap-guangzhou-3", "ip_cidr_block" : "192.168.1.0/24" },
-  guangzhou-four  = { "zone" : "ap-guangzhou-4", "ip_cidr_block" : "192.168.2.0/24" },
+  guangzhou-three = { "zone" : "ap-guangzhou-6", "ip_cidr_block" : "192.168.1.0/24" },
+  guangzhou-four  = { "zone" : "ap-guangzhou-7", "ip_cidr_block" : "192.168.2.0/24" },
 }
 
 sg_roles = [
