@@ -2,7 +2,7 @@ string = "This is a string"
 number = 14
 bool   = true
 
-list = ["ap-guangzhou-3", "ap-guangzhou-4"]
+list = ["ap-guangzhou-6", "ap-guangzhou-7"]
 map  = { ap-guangzhou = "Guangzhou", ap-shanghai = "Shanghai" }
 
 nested_map = {
