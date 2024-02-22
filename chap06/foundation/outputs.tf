@@ -1,4 +1,4 @@
-﻿output "vpc_id" {
+output "vpc_id" {
   value = tencentcloud_vpc.vpc.id
 }
 

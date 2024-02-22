@@ -5,9 +5,9 @@ resource "tencentcloud_security_group" "this" {
 
 resource "tencentcloud_security_group_lite_rule" "this_lite_rule" {
   security_group_id = tencentcloud_security_group.this.id
-  ingress = flatten([
+  ingress = [
     "ACCEPT#${data.terraform_remote_state.foundation.outputs.vpc_cidr}#3306#TCP"
-  ])
+  ]
 }
 
 resource "random_password" "root_password" {
