@@ -8,10 +8,17 @@ module "tags" {
 }
 
 resource "tencentcloud_vpc" "vpc" {
-  name         = "tag-example"
-  cidr_block   = "10.0.0.0/16"
-  dns_servers  = ["119.29.29.29", "8.8.8.8"]
-  is_multicast = false
+  name       = "tag-example"
+  cidr_block = "10.0.0.0/16"
+
+  tags = module.tags.result
+}
+
+resource "tencentcloud_subnet" "subnet" {
+  vpc_id            = tencentcloud_vpc.vpc.id
+  name              = "subnet-example"
+  cidr_block        = "10.0.0.0/18"
+  availability_zone = "ap-guangzhou-6"
 
   tags = module.tags.result
 }
